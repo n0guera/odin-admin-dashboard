@@ -15,9 +15,17 @@ ul {
     grid-template-rows: 1fr 1fr 5fr 1fr;
 }
 
+.header, .nav,
+.card, .announcement,
+.trending-user {
+    background-color: #f7fee7;
+}
+
 .dashboard {
     grid-column: 1 / 1;
     grid-row: 1 / 5;
+    background-color: #84cc16;
+    color: #f7fee7;
 }
 
 .nav {
@@ -25,10 +33,16 @@ ul {
     grid-template-columns: 2fr 2fr;
 }
 
+.nav button {
+    background-color: #84cc16;
+}
+
 .article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    background-color: #65a30d;
 }
 
 .project-cards {
