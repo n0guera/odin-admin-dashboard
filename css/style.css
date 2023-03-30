@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 ul {
@@ -12,7 +19,7 @@ ul {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-rows: 4rem 6rem 4fr;
 }
 
 .header, .nav,
@@ -40,23 +47,44 @@ ul {
 .article {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 16px;
+    grid-template-rows: 32px 1fr 32px 1fr;
+    gap: 32px;
     background-color: #65a30d;
+}
+
+.article h3 {
+    font-size: 1.5rem;
 }
 
 .project-cards {
     display: grid;
-    grid-column: 1 / 1;
-    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 32px;
+}
+
+.card {
+    border-radius: 8px;
 }
 
 .announcements {
+    display: grid;
     grid-column: 2 / 2;
-    grid-row: 1 / 1;
+    grid-row: 2 / 2;
+}
+
+.announcement {
+    border-radius: 8px;
 }
 
 .trending {
+    display: grid;
     grid-column: 2 / 2;
-    grid-row: 2 / 2;
+    grid-row: 4 / 4;
+}
+
+.trending-user {
+    border-radius: 8px;
 }
