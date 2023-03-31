@@ -28,20 +28,41 @@ ul {
     background-color: #f7fee7;
 }
 
+.header {
+    padding-left: 32px;
+}
+
 .dashboard {
     grid-column: 1 / 1;
     grid-row: 1 / 5;
     background-color: #84cc16;
     color: #f7fee7;
+    font-size: 1.5rem;
 }
 
 .nav {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1.5fr 1fr;
+    padding-left: 32px;
+    /* justify-content: space-around; */
 }
 
 .nav button {
     background-color: #84cc16;
+    border-style: none;
+    border-radius: 16px;
+    width: 96px;
+    padding: 8px;
+    height: min-content;
+    font-size: 1rem;
+    color: #f7fee7;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
 }
 
 .article {
@@ -50,6 +71,9 @@ ul {
     grid-template-rows: 32px 1fr 32px 1fr;
     gap: 32px;
     background-color: #65a30d;
+    padding-left: 32px;
+    padding-bottom: 64px;
+    padding-right: 64px;
 }
 
 .article h3 {
