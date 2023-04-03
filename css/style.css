@@ -37,11 +37,13 @@ ul {
     padding-left: 32px;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 48px;
 }
 
 .search {
     display: grid;
     align-items: center;
+    margin: 16px;
 }
 
 .search input{
@@ -55,8 +57,10 @@ ul {
 .user-tab {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: min-content min-content max-content;
     grid-column: 2 / 2;
+    justify-content: center;
+    gap: 16px;
 }
 
 .user-pfp {
