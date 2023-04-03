@@ -23,7 +23,7 @@ ul {
 }
 
 .icon {
-    height: 50px;
+    height: 32px;
     width: auto;
 }
 
@@ -59,6 +59,12 @@ ul {
     grid-column: 2 / 2;
 }
 
+.user-pfp {
+    height: 50px;
+    width: auto;
+    border-radius: 32px;
+}
+
 .dashboard {
     display: grid;
     grid-column: 1 / 1;
@@ -74,6 +80,13 @@ ul {
     grid-template-columns: 1.5fr 1fr;
     padding-left: 32px;
     justify-content: space-around;
+}
+
+.user-greet {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    gap: 16px;
 }
 
 .nav button {
