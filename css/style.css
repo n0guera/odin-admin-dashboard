@@ -22,10 +22,10 @@ ul {
     grid-template-rows: 4rem 6rem 4fr;
 }
 
-.icon {
-    height: 32px;
-    width: auto;
-}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
 
 .header, .nav,
 .card, .announcement,
@@ -69,10 +69,21 @@ ul {
     display: grid;
     grid-column: 1 / 1;
     grid-row: 1 / 5;
-    grid-template-rows: 50px 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
     background-color: #84cc16;
     color: #f7fee7;
     font-size: 1.5rem;
+}
+
+.dashboard h2, li {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.dashboard ul {
+    padding: 0;
+    margin: 24px;
 }
 
 .nav {
