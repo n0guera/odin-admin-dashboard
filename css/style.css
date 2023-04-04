@@ -16,10 +16,13 @@ ul {
 }
 
 .container {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 4rem 6rem 4fr;
+}
+
+.material-icons {
+    margin: 16px;
 }
 
 .material-icons.md-18 { font-size: 18px; }
@@ -28,7 +31,7 @@ ul {
 .material-icons.md-48 { font-size: 48px; }
 
 .header, .nav,
-.card, .announcement,
+.card.inner-text, .announcement,
 .trending-user {
     background-color: #f7fee7;
 }
@@ -82,12 +85,12 @@ ul {
 .dashboard h2, li {
     display: flex;
     align-items: center;
-    margin: 8px;
 }
 
 .dashboard ul {
     padding: 0;
-    margin: 24px;
+    margin: 12px;
+    font-weight: bold;
 }
 
 .nav {
@@ -131,6 +134,7 @@ ul {
     padding-left: 32px;
     padding-bottom: 32px;
     padding-right: 64px;
+    padding-top: 16px;
 }
 
 .article h3 {
@@ -147,14 +151,23 @@ ul {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     border-radius: 8px;
-    padding: 16px;
+    padding-left: 16px;
+    background-color: #a3e635;
 }
 
-.announcements {
-    display: grid;
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
+.inner-text {
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.announcement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .announcements-container {
@@ -168,5 +181,5 @@ ul {
     grid-column: 2 / 2;
     grid-row: 4 / 4;
     border-radius: 8px;
-    border: #f7fee7 18px solid;
+    border: #f7fee7 18px solid;    
 }
